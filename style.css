@@ -1,0 +1,205 @@
+body{
+    box-sizing: border-box;
+    margin:0;
+    background: rgb(18,18,18);
+    
+    font-family: Roboto;
+    font-weight: 300;
+    color: white;
+    
+    
+}
+/* HEADER */
+header{
+    background: rgb(18,18,18);
+    padding-bottom: 1rem;
+    min-width: 700px ;
+    max-height: 201px;
+    position: sticky;
+    top: -3.125rem;
+    width: 100%;
+    border-bottom: 1px solid rgb(73, 73, 73);
+    
+}
+
+.titulo{
+    font-size: 1.7rem;
+    -webkit-text-stroke: 1px rgb(177, 105, 23);
+    padding: 1rem 0px;
+   
+    margin:0px auto;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navegacion{
+    width: 50%;
+    min-width: 700px ;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+ul{
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    list-style: none;    
+    display: flex; 
+  
+}
+    
+    
+    
+li{
+    display: block;
+   
+    
+}
+    
+    
+a{
+    
+    font-size: 1.4rem;
+    color: white;
+    text-decoration: none;
+}
+    
+
+a:hover{
+    border-bottom: 1.2px solid rgba(80, 153, 175, 0.801);
+    color: rgba(80, 153, 175, 0.801);
+}
+/* MAIN CONTENT */
+.blog{
+    font-size: 1.1rem;
+    background-color: rgba(25, 37, 41, 0.8);
+    width: 60%;
+    padding: 1rem 2rem;
+    min-width: 700px ;
+    margin-left: auto;
+    margin-right: auto;
+    height:auto;
+}
+h2{
+    color: rgba(67, 159, 187, 0.801);
+    font-style: italic;
+    font-weight: 500;
+}
+.content-1{
+    display: flex;
+    border-bottom: 0.8px solid white;
+    
+}
+.resumen-text{
+    padding: 1rem;
+    width: 60%;
+}
+.img{
+    display: flex;
+    justify-content: center;
+    width: 35%;
+    padding: 1rem;
+}
+
+.link>a{
+    font-size: 1rem;
+    text-decoration-line:underline ;
+    color: rgba(0, 220, 224, 0.801);
+}
+
+
+/* CONTACTO */
+.footer{
+    padding: 1.5rem;
+    
+    background: rgb(18,18,18);
+    left: 0;
+    bottom: 0;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100px;
+    text-align: center;
+    border-top: 1px solid rgb(73, 73, 73);
+    font-size: 1.2rem;
+    min-width: 700px ;
+}
+    
+img{
+    object-fit: cover;
+    object-position: center center;
+    width: 100%;
+    height: 100%;
+    min-width: 250px;
+    max-height: 300px;
+    align-self: center;
+
+}
+
+.content-presentacion{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-style: italic;
+    border-bottom: 0.8px solid white;
+    
+}
+/* meadia querys */
+/* 
+    medidas: +1024px  laptop/pc - 1023px- 768 tablet 767 -320px  phone.
+
+*/
+
+@media screen and (max-width: 800px ){
+  /*   body{
+        background-color: chartreuse;
+    } */
+    .content-1{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+     .img{
+        width: 70%;
+    }
+    .resumen-text{
+        width: 80%;
+    } 
+    .footer{
+        
+    }
+}
+
+.write{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: monospace;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 29ch;
+    color: chocolate;
+
+    animation: typing 3s steps(29),
+    blink .5s infinite step-end alternate;
+    overflow:hidden;
+}
+
+@keyframes typing {
+    from{width:0}
+}
+@keyframes blink {
+    50% { border-color: transparent}
+}
+/* PENIDENTES
+
+-efecto amquina de escribir
+-modo claro oscuro
+-descarga de pdf
+
+
+*/
